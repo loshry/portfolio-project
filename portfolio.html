@@ -1,75 +1,115 @@
 <!-- creation of project portfolio for _nology bootcamp-->
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project Portfolio</title>
-    <link rel="stylesheet" href="./portfolio.css">
+    <link rel="stylesheet" href="./portfolio.css" />
+    <script src="https://kit.fontawesome.com/7ae33399b3.js" crossorigin="anonymous"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&family=Work+Sans&display=swap');
     </style>
-</head>
-    <header>
-        <nav>
-            <a href="#intro">Leah Oshry</a>
-            <a href="#intro">Home</a>
-            <a href="#about">About</a> 
-            <a href="#projects">Projects</a>
-            <a href="#contact">Get in Touch</a>
-        </nav>
-    </header>
-<body>
-<!-- Introduction-->
-    <section>
-        <h1 id="#intro">Hi! I'm Leah Oshry</h1>
-        <p>A newly minted software developer based in NYC</p>
-        <nav>
-            <a href="#projects">skip to projects</a> 
-        </nav>
-    </section>
-<!-- technical skills-->
-    <section>
-        <h2>Technical Skills</h2>
-        <div class="skill-images">
-            <img src="./skills/git.png" alt="GIT">
-            <img src="./skills/html.png" alt="HTML5">
-            <img src="./skills/css.png" alt="CSS3">
-            <img src="./skills/javascript.png" alt="JavaScript">
-            <img src="./skills/scss.png" alt="SCSS">
-            <img src="./skills/bem.png" alt="BEM">
-            <img src="./skills/react.png" alt="React">
-            <img src="./skills/java.png" alt="Java">
-            <img src="./skills/springboot.png" alt="SpringBoot">
+  </head>
+  <header>
+    <p>
+      <a href="#intro">Leah Oshry</a>
+    </p>
+    <nav>
+      <a href="#intro">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a class="button" href="#contact">Get in Touch</a>
+    </nav>
+  </header>
+  <body>
+    <main>
+      <!-- Introduction-->
+      <section class="intro">
+        <div>
+          <h1 id="intro">Hi! I'm Leah Oshry</h1>
+          <h2>A newly minted software developer based in NYC</h2>
+          <a class="button" href="#projects">Skip to projects</a>
         </div>
+        <img src="" alt="" />
+      </section>
+      <!-- technical skills-->
+      <section class="technical">
+        <h3>Technical Skills</h3>
+        <p></p>
         <div class="skills">
+          <!-- <i> is the tag for icon-->
+          <div>
+            <img src="./skills/git.png" alt="GIT" />
             <p>GIT</p>
+          </div>
+          <div>
+            <img src="./skills/html.png" alt="HTML5" />
             <p>HTML5</p>
+          </div>
+          <div>
+            <img src="./skills/css.png" alt="CSS3" />
             <p>CSS3</p>
+          </div>
+          <div>
+            <img src="./skills/javascript.png" alt="JavaScript" />
             <p>JavaScript</p>
+          </div>
+          <div>
+            <img src="./skills/scss.png" alt="SCSS" />
             <p>SCSS</p>
+          </div>
+          <div>
+            <img src="./skills/bem.png" alt="BEM" />
             <p>BEM</p>
+          </div>
+          <div>
+            <img src="./skills/react.png" alt="React" />
             <p>React</p>
+          </div>
+          <div>
+            <img src="./skills/java.png" alt="Java" />
             <p>Java</p>
+          </div>
+          <div>
+            <img src="./skills/springboot.png" alt="SpringBoot" />
             <p>Spring Boot</p>
+          </div>
+          
         </div>
-    </section>
-<!--my projects-->
-    <section>
-        <h3 id="#projects">My Projects</h3>
-            <section>
-                <div>project1</div>
-                <div>project2</div>
-                <div>project3</div>
-            </section>
-    </section>
-<!--About me-->
-    <section>
-        <h4 id="#about">About Me</h4>
-    </section>
-    
-</body>
-<footer>
-    <p id="#contact">owlinnyc@gmail.com</p>
-</footer>
+       
+      </section>
+      <!--my projects-->
+      <h4 id="projects">My Projects</h4>
+      <section class="project grid-container">
+                <section>
+          <div class="picture">project1</div>
+            <p class="project-type">REACT</p>
+            <p class="project-title">Client Project</p>
+            <p class="project-description">verbiage about the project that explains generally why it was so great</p>
+        </section>
+        <section>
+          <div class="picture">project2</div>
+          <p class="project-type">Java, SpringBoot</p>
+            <p class="project-title">Client Project</p>
+            <p class="project-description">verbiage about the project that explains generally why it was so great</p>
+        </section>
+        <section>
+          <div class="picture">project3</div>
+          <p class="project-type">REACT</p>
+            <p class="project-title">Client Project</p>
+            <p class="project-description">verbiage about the project that explains generally why it was so great</p>
+        </section>
+      </section>
+      <!--About me-->
+      <section>
+        <h5 id="about">About Me</h5>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad hic blanditiis inventore omnis nisi vitae odio! Quaerat magnam, a non magni impedit repudiandae nulla libero dolor! Eius harum perferendis aliquid.
+        </p>
+      </section>
+    </main>
+  </body>
+  <footer>
+    <p id="contact">owlinnyc@gmail.com</p>
+  </footer>
 </html>

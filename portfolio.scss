@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  color: navy;    
+}
+
+$border: 2px solid lightblue;
+$font-color: black;
+$header-background-color: lightgray;
+$project-background-color: lightsteelblue;
+
+
+header {
+    background-color: $header-background-color;
+    color: $font-color;
+    height: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fa-code {
+    font-size: 10px;
+    margin: 2px;
+
+}
+
+
+.dot {
+        height: 15px;
+        width: 15px;
+        border: 1px solid navy;
+        opacity: 15%;
+        border-radius: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 8px;
+      }
+
+nav{
+    display: flex;
+    flex-direction: row;
+}
+
+.fa-hand-wave {
+    font-size: 20px;
+    color: yellow;
+    
+}
+.header-bar {
+    margin: 0 100px;
+}
+
+section {
+    border: $border;
+
+}
+
+h1{
+    margin: 5px 0;
+}
+
+.name {
+    display: flex;
+    flex-direction: row;
+}
+
+.fa-hand-sparkles {
+    color: pink;
+    font-size: 20px;
+}
+
+h2 {
+    margin: 20px 0;
+}
+
+.introduction{
+    margin: 20px;
+    height: 200px;
+
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h3,
+h4,
+h5 {
+  font-weight: bold;
+  font-size: 30px;
+  text-decoration: underline;
+  text-decoration-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  max-height: 20px;
+  max-width: 20px;
+}
+
+.skills {
+  border: 2px solid lightblue;
+  margin: 20px 40px;
+  padding: 15px;
+  font-size: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.button {
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin: 40px 40px;
+  padding: 5px;
+  background-color: lightcyan;
+  border: $border;
+  font-size: 15px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.picture {
+  grid-area: picture;
+  height: 250px;
+  width: 100px;
+  margin: 20px 0;
+  border: $border;
+  background-color: $project-background-color;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+.project-type {
+  grid-area: project-type;
+  color: lightseagreen;
+}
+
+.project-title {
+  grid-area: project-title;
+  color: black;
+}
+
+.project-description {
+  grid-area: project-description;
+  color: $font-color;
+}
+.grid-container {
+  display: grid;
+  gap: 10px;
+  margin: 20px 40px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 3fr 1fr 1fr 4fr;
+  height: 100vh;
+  grid-template-areas:
+    "picture picture picture"
+    "project-type project-type project-type"
+    "project-title project-title project-title"
+    "project-description project-description project-description";
+}
+
+footer {
+    .professional {
+        border: $border;
+        border-radius: 360
+    }
+}
+

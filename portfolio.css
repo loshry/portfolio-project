@@ -62,8 +62,12 @@ h1 {
 }
 
 .image {
-  height: 300px;
-  width: 100px;
+  box-sizing: border-box;
+  border: 2px solid lightblue;
+  max-height: 300px;
+  max-width: 100px;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .fa-hand-sparkles {

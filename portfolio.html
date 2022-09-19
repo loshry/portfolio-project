@@ -14,7 +14,7 @@
       @import url("https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&family=Work+Sans&display=swap");
     </style>
   </head>
-  <header>
+  <header class="header">
     <div class="header-name">
       <div class="dot">
         <i class="fa-solid fa-code"></i>
@@ -42,9 +42,11 @@
     <!-- Introduction-->
     <section>
       <div class="introduction">
-        <div class="name">
+        <div class="introduction__name">
           <i class="fa-solid fa-hand-sparkles"></i>
           <h1 id="intro">Hi! I'm Leah Oshry</h1>
+        </div>
+          <div class="introduction__description">
           <h2>A newly minted software developer based in NYC</h2>
           <a class="button" href="#projects">Check out projects</a>
         </div>
@@ -57,41 +59,41 @@
     <section class="technical">
       <h3>Technical Skills</h3>
       <p></p>
-      <div class="skills">
+      <div class="skills skills_gridcontainer">
         <!-- <i> is the tag for icon-->
-        <div>
+        <div class="git">
           <img src="./skills/git.png" alt="GIT" />
           <p>GIT</p>
         </div>
-        <div>
+        <div class="html">
           <img src="./skills/html.png" alt="HTML5" />
           <p>HTML5</p>
         </div>
-        <div>
+        <div class="css">
           <img src="./skills/css.png" alt="CSS3" />
           <p>CSS3</p>
         </div>
-        <div>
+        <div class="javascript">
           <img src="./skills/javascript.png" alt="JavaScript" />
           <p>JavaScript</p>
         </div>
-        <div>
+        <div class="scss">
           <img src="./skills/scss.png" alt="SCSS" />
           <p>SCSS</p>
         </div>
-        <div>
+        <div class="bem">
           <img src="./skills/bem.png" alt="BEM" />
           <p>BEM</p>
         </div>
-        <div>
+        <div class="react">
           <img src="./skills/react.png" alt="React" />
           <p>React</p>
         </div>
-        <div>
+        <div class="java">
           <img src="./skills/java.png" alt="Java" />
           <p>Java</p>
         </div>
-        <div>
+        <div class="springboot">
           <img src="./skills/springboot.png" alt="SpringBoot" />
           <p>Spring Boot</p>
         </div>
@@ -159,9 +161,9 @@
     </main>
 
     <!--About me-->
-    <article>
-      <h5 id="about">About Me</h5>
-      <p>
+    <article class="article">
+      <h5 class="article__header" id="about">About Me</h5>
+      <p class="article__paragraph">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad hic
         blanditiis inventore omnis nisi vitae odio! Quaerat magnam, a non magni
         impedit repudiandae nulla libero dolor! Eius harum perferendis aliquid.
@@ -169,15 +171,11 @@
     </article>
   </body>
   <footer class="footer">
-    <div>
       <p id="contact">owlinnyc@gmail.com</p>
       <section class="professional">
         <a class="dot" href="#cv"><i class="fa-regular fa-file-pdf"></i></a>
         <a class="dot" href="#git"><i class="fa-brands fa-github"></i></a>
-        <a class="dot" href="#linkedin"
-          ><i class="fa-brands fa-linkedin-in"></i
-        ></a>
+        <a class="dot" href="#linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
       </section>
-    </div>
   </footer>
 </html>

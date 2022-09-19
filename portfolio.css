@@ -5,7 +5,7 @@
   color: navy;
 }
 
-header {
+.header {
   background-color: lightgray;
   color: black;
   height: 20px;
@@ -29,17 +29,18 @@ header {
   justify-content: space-around;
   align-items: center;
   padding: 8px;
-}
-
-.header-name {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  margin: 5px;
 }
 
 nav {
   display: flex;
   flex-direction: row;
+}
+
+.header-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .header-bar {
@@ -54,11 +55,17 @@ h1 {
   margin: 5px 0;
 }
 
-.name {
+.introduction__name {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
+}
+
+.introduction__description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .image {
@@ -102,9 +109,7 @@ h5 {
   text-decoration: underline;
   -webkit-text-decoration-color: aqua;
           text-decoration-color: aqua;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 
 img {
@@ -127,7 +132,7 @@ img {
 .button {
   box-sizing: border-box;
   border-radius: 5px;
-  margin: 40px 40px;
+  margin: 10px 5px;
   padding: 5px;
   background-color: lightcyan;
   border: 2px solid lightblue;
@@ -170,8 +175,6 @@ img {
 .grid-container {
   display: grid;
   gap: 10px;
-  margin: 20px 40px;
-  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 3fr 1fr 1fr 4fr;
   height: 100vh;
   grid-template-areas: "picture picture picture" "project-type project-type project-type" "project-title project-title project-title" "project-description project-description project-description";
@@ -180,10 +183,66 @@ img {
 .footer {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .professional {
   color: blue;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.article {
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid lightblue;
+}
+.article__paragraph {
+  border: 2px solid lightblue;
+  text-align: center;
+}
+
+.git {
+  grid-area: git;
+}
+
+.html {
+  grid-area: html;
+}
+
+.css {
+  grid-area: css;
+}
+
+.javascript {
+  grid-area: javascript;
+}
+
+.scss {
+  grid-area: scss;
+}
+
+.bem {
+  grid-area: bem;
+}
+
+.react {
+  grid-area: react;
+}
+
+.java {
+  grid-area: java;
+}
+
+.springboot {
+  grid-area: springboot;
+}
+
+@media screen and (max-width: 800px) {
+  .skills_gridcontainer {
+    display: grid;
+    gap: 10px;
+    grid-template-areas: "git html css" "javascript scss bem" "react java springboot";
+  }
 }/*# sourceMappingURL=portfolio.css.map */

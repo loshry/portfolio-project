@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: "Oswald", sans-serif;
-  color: navy;    
+  color: navy;
 }
 
 $border: 2px solid lightblue;
@@ -11,99 +11,101 @@ $font-color-icons: blue;
 $header-background-color: lightgray;
 $project-background-color: lightsteelblue;
 
-
-header {
-    background-color: $header-background-color;
-    color: $font-color-secondary;
-    height: 20px;
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.header {
+  background-color: $header-background-color;
+  color: $font-color-secondary;
+  height: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .fa-code {
-    font-size: 10px;
-    color: $font-color-icons
-   
+  font-size: 10px;
+  color: $font-color-icons;
 }
-
 
 .dot {
-        height: 15px;
-        width: 15px;
-        border: 1px solid navy;
-        border-radius: 50%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        padding: 8px;
-      }
+  height: 15px;
+  width: 15px;
+  border: 1px solid navy;
+  border-radius: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px;
+  margin: 5px;
+}
+
+
+
+nav {
+  display: flex;
+  flex-direction: row;
+}
 
 .header-name {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
-
-nav{
-    display: flex;
-    flex-direction: row;
-}
-
 
 .header-bar {
-    margin: 0 100px;
+  margin: 0 100px;
 }
 
 section {
-    border: $border;
-
+  border: $border;
 }
 
-h1{
-    margin: 5px 0;
+h1 {
+  margin: 5px 0;
 }
 
-.name {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+.introduction__name {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.introduction__description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .image {
-    box-sizing: border-box;
-    border: $border;
-    max-height: 300px;
-    max-width: 100px;
-    object-fit: fill;
+  box-sizing: border-box;
+  border: $border;
+  max-height: 300px;
+  max-width: 100px;
+  object-fit: fill;
 }
 
 .fa-hand-sparkles {
-    color: pink;
-    font-size: 20px;
+  color: pink;
+  font-size: 20px;
 }
 
 h2 {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
-.introduction{
-    margin: 20px;
-    height: 200px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
+.introduction {
+  margin: 20px;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .grid-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 h3,
@@ -113,9 +115,7 @@ h5 {
   font-size: 30px;
   text-decoration: underline;
   text-decoration-color: aqua;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 
 img {
@@ -138,7 +138,7 @@ img {
 .button {
   box-sizing: border-box;
   border-radius: 5px;
-  margin: 40px 40px;
+  margin: 10px 5px;
   padding: 5px;
   background-color: lightcyan;
   border: $border;
@@ -163,7 +163,6 @@ img {
   justify-content: center;
 }
 
-
 .project-type {
   grid-area: project-type;
   color: lightseagreen;
@@ -181,8 +180,7 @@ img {
 .grid-container {
   display: grid;
   gap: 10px;
-  margin: 20px 40px;
-  grid-template-columns: 1fr 1fr 1fr;
+
   grid-template-rows: 3fr 1fr 1fr 4fr;
   height: 100vh;
   grid-template-areas:
@@ -193,14 +191,77 @@ img {
 }
 
 .footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
 }
 
 .professional {
-       color: $font-color-icons;
-    }
+  color: $font-color-icons;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.article {
+  padding: 10px;
+  margin: 10px;
+  border: $border;
+  &__paragraph {
+    border: $border;
+    text-align: center;
+
+  }
+}
+
+.git {
+  grid-area: git;
+}
+
+.html {
+  grid-area: html;
+}
+
+.css {
+  grid-area: css;
+}
+
+.javascript {
+  grid-area: javascript;
+}
+
+.scss {
+  grid-area: scss;
+}
+
+.bem {
+  grid-area: bem;
+}
+
+.react {
+  grid-area: react;
+}
+
+.java {
+  grid-area: java
+}
+
+.springboot {
+  grid-area: springboot;
+}
 
 
+@media screen and (max-width: 800px) {
+  .skills_gridcontainer {
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    
+    "git html css"
+    "javascript scss bem"
+    "react java springboot";
+
+  }
+  
+}
